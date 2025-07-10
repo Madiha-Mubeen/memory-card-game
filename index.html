@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card-game</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <h1 class="main-title">Memory Card Game</h1>
+        <div class="info">
+            <span id="moves">Moves: 0</span>
+            <span id="timer">Time: 0s</span>
+            <span id="stars">⭐️⭐️⭐️</span>
+            <button id="toggle-theme">🌙</button>
+        </div>
+    </div>
+    <div class="game-board" id="game-board"></div>
+    <div class="win-message" id="win-message">
+        Hurray! You Won <br/>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+      
+ 
+    <script src="script.js"></script>
+</body>
+</html>
